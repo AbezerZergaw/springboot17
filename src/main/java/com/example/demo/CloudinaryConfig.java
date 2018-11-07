@@ -12,12 +12,12 @@ import java.io.IOException;
 import java.util.Map;
 
 @Component
-public class CloudinaryConfig {
+public class CloudinaryConfig  {
 
     private Cloudinary cloudinary;
 
 
-    public CloudinaryConfig(@Value("${cloud.key}") String key, @Value("${cloud.secret}") String secret, @Value("${cloud.name}") String cloud){
+    public CloudinaryConfig (@Value("${cloud.key}") String key, @Value("${cloud.secret}") String secret, @Value("${cloud.name}") String cloud){
 
 
         cloudinary= Singleton.getCloudinary();
